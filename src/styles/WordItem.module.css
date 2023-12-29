@@ -1,0 +1,57 @@
+.container {
+  width: 70%;
+  height: 10%;
+  display: flex;
+  margin: 1% 0;
+  border-radius: 10px;
+  transition: all 0.1s;
+  padding-bottom: 5px;
+}
+
+.container:hover {
+  background-color: rgba(228, 228, 228, 0.553);
+}
+
+.checkbox {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkbox>input {
+  width: 25%;
+  height: 100%;
+}
+
+.body {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.delete {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.deleteBtn {
+  color: rgb(145, 145, 145);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.deleteBtn:hover {
+  background-color: rgb(214, 214, 214);
+}
+
+#english {
+  font-size: 21px;
+  font-weight: 700;
+}
