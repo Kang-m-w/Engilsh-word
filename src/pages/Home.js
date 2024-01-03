@@ -20,7 +20,7 @@ const Home = ({ data, onDelete, onUpdate }) => {
 
   return (
     <div className={styles.home}>
-      <div className={styles.container}>
+      <div className="container">
         <h3>📒영단어 암기장</h3>
         <div className={styles.top}>
           <div className={styles.search}>

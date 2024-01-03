@@ -14,11 +14,11 @@
   align-items: center;
 }
 
-.container > h3 {
+h3 {
   margin-top: 10%;
 }
 
-.container > h4 {
+h4 {
   margin: 2% 0 5% 0;
 }
 
