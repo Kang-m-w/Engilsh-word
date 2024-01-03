@@ -11,8 +11,15 @@ const WordItem = ({ id, english, korean, isMemorized, onDelete, onUpdate }) => {
     onUpdate(id, english, korean, isChecked);
   };
 
+  const listenWord = () => {
+    let word = new SpeechSynthesisUtterance(english);
+    word.lang = "en-US";
+    speechSynthesis.speak(word);
+};
+
+
   return (
-    <div className={styles.container}>
+    <div className={styles.container} onClick={listenWord}>
       <div className={styles.checkbox}>
         <input type="checkbox" checked={isChecked} onChange={checkhandler} />
       </div>
@@ -34,9 +41,12 @@ const WordItem = ({ id, english, korean, isMemorized, onDelete, onUpdate }) => {
         <span id={styles.korean}>{korean}</span>
       </div>
       <div className={styles.delete}>
-        <span className={styles.deleteBtn} onClick={() => {
-          onDelete(id);
-        }}>
+        <span
+          className={styles.deleteBtn}
+          onClick={() => {
+            onDelete(id);
+          }}
+        >
           <FontAwesomeIcon icon={faXmark} />
         </span>
       </div>
