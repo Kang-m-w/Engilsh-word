@@ -6,7 +6,7 @@ import Button from "../components/Button";
 const AddWord = ({ addWordFn, setKor, setEng }) => {
   return (
     <div className={styles.addword}>
-      <div className={styles.container}>
+      <div className="container">
         <div className={styles.box}>
           <h3>영단어 추가하기</h3>
           <span>단어를 추가할 수 있습니다!</span>

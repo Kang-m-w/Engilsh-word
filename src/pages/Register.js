@@ -23,7 +23,7 @@ const Register = () => {
 
   return (
     <div className={styles.register}>
-      <div className={styles.container}>
+      <div className="container">
         <div className={styles.box}>
           <h3 align="center">회원가입</h3>
           <div className={styles.inputList}>

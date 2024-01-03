@@ -16,7 +16,7 @@ const Login = () => {
 
   return (
     <div className={styles.login}>
-      <div className={styles.container}>
+      <div className="container">
         <div className={styles.box}>
           <h3 align="center">로그인</h3>
           <div className={styles.inputList}>
